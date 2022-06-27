@@ -77,6 +77,7 @@ class PresenceGraph extends Component {
                                 chart: {
                                     width: 380,
                                     type: 'pie',
+                                    padding: "90px"
                                 },
                                 labels: name,
                                 responsive: [{
