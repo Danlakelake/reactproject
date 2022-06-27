@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --background-color: #F0F6FF;
+  --main-white: #FFFFFF;
+  --main-blue: #006FFF;
+  --main-black: #011B33;
+  --main-red: #D6215B;
+  --main-green: #23B794;
+  --gray-header-table: #A6A6A7;
+}

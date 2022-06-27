@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+
+//Import Components
+import Navbar from './components/Navbar';
+import MainTitle from './components/MainTitle';
+import PriceEvoGraph from './components/PriceEvoGraph';
+import PresenceGraph from './components/PresenceGraph';
+import DataTable from './components/DataTable';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < div className="App" >
+      <Navbar />
+      <MainTitle />
+      <div className="graphs-cont">
+        <PriceEvoGraph />
+        <PresenceGraph />
+      </div>
+      <DataTable />
+    </div >
   );
 }
 

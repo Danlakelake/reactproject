@@ -1,0 +1,81 @@
+@import url("../css/index.css");
+
+body {
+  background: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  background: var(--main-blue);
+}
+
+.navbar-brand img {
+  position: absolute;
+  width: 155px;
+  height: 62.29px;
+  left: 30px;
+  top: 4px;
+}
+
+.main-title {
+  color: var(--main-black);
+  margin-top: 40px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.graphs-cont {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: left;
+  padding: 30px 20px;
+}
+
+.graphs-cont .graph-1,
+.graphs-cont .graph-2 {
+  background-color: var(--main-white);
+  min-height: 365px;
+
+}
+
+.graphs-cont .graph-2 {
+  padding: 90px 20px;
+}
+
+.dataTable-cont {
+  padding: 20px;
+}
+
+.dataTable-cont h4 {
+  text-align: left;
+}
+
+.dataTable-cont .dataTable {
+  vertical-align: middle;
+  background-color: var(--main-white);
+}
+
+.dataTable-cont .dataTable thead {
+  background-color: var(--gray-header-table);
+}
+
+.dataTable-cont .dataTable img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 740px) {
+  .graphs-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
