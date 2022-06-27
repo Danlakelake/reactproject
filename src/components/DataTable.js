@@ -24,7 +24,7 @@ class DataTable extends Component {
                     articles: res.data,
                     status: "success"
                 })
-                console.log(this.state);
+
             }).catch(err => {
                 console.log("error", err);
             })

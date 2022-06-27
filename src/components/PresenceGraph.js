@@ -61,7 +61,6 @@ class PresenceGraph extends Component {
                     status: "success"
                 })
 
-
                 //Map Response (Articles)
                 this.state.articles.map((article) => {
 

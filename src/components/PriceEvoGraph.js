@@ -63,7 +63,7 @@ class PriceEvoGraph extends Component {
         const price = [];
         const date = [];
 
-        await axios.get(this.url + "price-evolution-chart/")
+        await axios.get(this.url + "price-evolution-chart")
             .then(res => {
                 this.setState({
                     articles: res.data,
