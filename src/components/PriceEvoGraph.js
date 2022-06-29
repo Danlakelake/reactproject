@@ -85,33 +85,42 @@ class PriceEvoGraph extends Component {
                             series: [
                                 {
                                     name: name[0],
-                                    data: price,
-                                    color: '#D6215B',
+                                    data: price
                                 },
                                 {
                                     name: name[10],
-                                    data: price,
-                                    color: '#7530B2',
+                                    data: price
                                 },
                                 {
                                     name: name[21],
-                                    data: price,
-                                    color: "#FFB448",
+                                    data: price
                                 },
-                            ],
 
+                            ],
                             options: {
-                                xaxis:
-                                {
+                                chart: {
+                                    height: 350,
+                                    type: 'area'
+                                },
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                stroke: {
+                                    curve: 'smooth'
+                                },
+                                xaxis: {
                                     type: 'datetime',
                                     categories: date
                                 },
+                                tooltip: {
+                                    x: {
+                                        format: 'dd/MM/yy HH:mm'
+                                    },
+                                },
                             },
-
                         })
                     )
                 });
-
 
             }).catch(err => {
                 console.log("error", err);
